@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: enter-auth-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/enter_auth_db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
